@@ -12,8 +12,8 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) { 
-      //Navigator.of(context).pushReplacementNamed("/auth/login");
-      Navigator.of(context).pushReplacementNamed("/home");
+      Navigator.of(context).pushReplacementNamed("/auth/login");
+      //Navigator.of(context).pushReplacementNamed("/home");
     });
     super.initState();
   }

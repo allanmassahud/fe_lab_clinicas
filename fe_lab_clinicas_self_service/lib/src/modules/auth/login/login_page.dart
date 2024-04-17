@@ -23,13 +23,15 @@ class _LoginPageState extends State<LoginPage> with MessageViewMixin{
 
   @override
   void initState() {
+    super.initState();
     messageListener(_controller);
     effect(() {
       if(_controller.logged){
         Navigator.of(context).pushReplacementNamed("/home");
       }
     });
-    super.initState();
+    _emailController.text = "allan@dentalsoft.com.br";
+    _senhaController.text = "123123";
   }
 
 
